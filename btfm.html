@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>ʕ·͡ᴥ·ʔ﻿</title>
+<style>
+body {
+	background-image: url("open roads.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	color: #1d3b4a;
+	text-align: center;
+	
+}
+h4 {
+	color: #456374;
+	text-align: center;
+}
+p {
+	color: #000e19;
+	text-align: left;
+}
+</style>
+</head>
+<body>
+<pre>
+<a href="index.html">Home</a> > <a href="projects.html">Projects</a>
+</pre>
+
+<h1>Bluetooth to FM Radio</h1>
+
+<h4>This has been done before, but I wanted to put this up here since I've gotten this working myself now.</h4>
+<p>We were about to go on a road trip, but the car we were going to take is pretty old. We're talking cassette tapes old.
+Sorry to anyone who was around when those were popular. There are converters that take your cassette tape 
+reader and convert that to an audio jack, but sadly most phones don't have an audio jack anymore. At least ours don't.
+Being an engineer at heart, I decided to go with the most complicated solution and create a Bluetooth to FM radio 
+"adapter" in GNURadio. Honestly, I feel like I was waiting for an excuse to do something like this. The first
+part involved ironing out my FM broadcasting and recieving. This honestly took more time than it should have.
+I finally got it working when I set my low pass filter up right. After that all I needed to do was transmit, 
+which ended up being way easier. The only other thing I had to do was sync the audio sampling rate and the quadrature
+rate and then the quadrature rate with the SDR sampling rate. Once the math was aligned we had liftoff. Here's a 
+video of the final result.</p>
+
+<video src="btfm.mp4" controls>
+... There should be a video here.
+</video>
+
+<p>I wasn't satisfied with just one successful experiment so I called my brother up and we tested it in his car.
+We found that my little SDR isn't quite powerful enough to compete with the radio stations in the open air, but
+when we found a static channel the radio worked exactly as intended.</p>
+
+</ul>
+</body>
+</html>
