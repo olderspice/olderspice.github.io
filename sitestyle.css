@@ -1,0 +1,118 @@
+.menu{
+	margin: 0;
+	padding: 2px;
+	overflow: hidden;
+	background-color: #041b25;
+	position: fixed; 
+	top: 0;
+	width: 100%; 
+	
+}
+.menu a{
+	float:left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+	
+}
+
+.menu a:hover:not(.page){
+	background-color: #3f5e6e;
+	
+}
+
+.page {
+  background-color: #9c9c9c;
+  color: #000e19;
+}
+
+.main {
+	padding: 50px 30px;
+	
+}
+
+
+body {
+	margin:0;
+	background-image: url("open roads.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Cascadia Code";
+}
+
+h1 {
+	color: #1d3b4a;
+	text-align: center;
+	font-size: 32px;
+	
+}
+
+p {
+	color: #000e19;
+	text-align: left;
+	font-size: 18px;
+	line-height: 1.4;
+
+}
+
+a {
+	color: #000e19;
+	text-align: left;
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: "Cascadia Code";
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #041b25;
+  border-radius: 10px;
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+li a:hover:not(.active) {
+  background-color: #3f5e6e;
+}
+
+
+.collapsible {
+  background-color: #041b25;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background: rgba(0,0,0,0);
+}
